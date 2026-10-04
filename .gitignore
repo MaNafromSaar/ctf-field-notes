@@ -1,0 +1,67 @@
+# Challenge binaries, archives, disk images, and captures
+*.apk
+*.xpi
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.*
+*.gz
+*.img
+*.dd
+*.pcap
+*.pcapng
+*.elf
+*.bin
+*.o
+*.so
+*.class
+
+# Databases, credentials, keys, and extracted challenge answers
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+**/flag
+**/flag.*
+**/flags/
+**/cookies.txt
+**/*creds-dump*
+**/credentials*
+**/*passwords*
+**/userinfo.txt
+**/private.txt
+**/private.pem
+**/hash.txt
+**/admin.hash
+**/kubeconfig*
+**/secrets.txt
+**/.env
+**/.env.*
+
+# Decompiled/build output and local Python environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+
+# OS metadata and downloaded Mark-of-the-Web sidecars
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Images are omitted by default; reviewed screenshots may live here.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tif
+*.tiff
+!writeups/**/assets/screenshots/*.png
+!writeups/**/assets/screenshots/*.jpg
+!writeups/**/assets/screenshots/*.jpeg
