@@ -6,7 +6,7 @@ The image itself appears ordinary, but metadata inspection reveals a long hexade
 
 ## Restore and validate the key
 
-Inspect metadata with a tool such as `exiftool`, then copy only the hex digits from the relevant field into a local working file. Convert the plain hexadecimal bytes back to a binary PEM file with:
+Inspect metadata with a tool such as `exiftool` or even a sophisticated viewer such as `IrfanView` or `GIMP`, then copy only the hex digits from the relevant field into a local working file. Convert the plain hexadecimal bytes back to a binary PEM file with:
 
 ```bash
 xxd -r -p metadata.hex recovered.pem

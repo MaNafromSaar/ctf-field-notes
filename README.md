@@ -18,6 +18,8 @@ The techniques span artifact analysis, reverse engineering, network services, an
 
 ### Forensics
 - [Recovering an RSA key from image metadata](writeups/forensics/stego-rsa.md)
+- [Image steganography with LSB analysis](writeups/forensics/image-lsb-steganography.md)
+- [Finding ROT13 text in a packet capture](writeups/forensics/rot13-in-packet-capture.md)
 
 ### Reversing
 - [Using LLDB to inspect a runtime password check](writeups/reversing/lldb-password-check.md)
@@ -25,6 +27,7 @@ The techniques span artifact analysis, reverse engineering, network services, an
 - [Extension traffic: intent versus executed behavior](writeups/reversing/extension-traffic-analysis.md)
 
 ### Web and Services
+- [Fool Lockout: a rate-limit window mistaken for a lockout](writeups/web/fool-lockout-rate-limit.md)
 - [Session reuse caused by exposed session identifiers](writeups/web/session-reuse.md)
 - [Predictable identifiers and an IDOR](writeups/web/md5-idor.md)
 - [Inspecting response headers across HTTP methods](writeups/web/response-headers.md)
@@ -47,6 +50,7 @@ The techniques span artifact analysis, reverse engineering, network services, an
 - [Bytemancy address-response helper](scripts/solve_bytemancy.py)
 - [ELF obfuscated-hash helper](scripts/recover_obfuscated_hash.py)
 - [Local wordlist digest search](scripts/search_hash_wordlist.py)
+- [Fool Lockout credential tester](scripts/fool_lockout_credential_tester.py)
 
 The network helper requires explicit current-instance arguments and makes no requests until run. Other helpers operate on local inputs. Use the matching tools and libraries for the challenge environment.
 
