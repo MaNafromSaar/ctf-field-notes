@@ -10,6 +10,7 @@ The techniques span artifact analysis, reverse engineering, network services, an
 - [Echo Escape: ret2win with a stack overwrite](writeups/binary-exploitation/echo-escape.md)
 - [PIE Time: deriving a runtime function address](writeups/binary-exploitation/pie-time.md)
 - [Bytemancy: answering randomized function-address prompts](writeups/binary-exploitation/bytemancy.md)
+- [Leaking a flag through a format string](writeups/binary-exploitation/format-string-stack-leak.md)
 
 ### Cryptography
 - [Known-plaintext recovery against repeating XOR](writeups/cryptography/repeating-xor.md)
@@ -20,6 +21,7 @@ The techniques span artifact analysis, reverse engineering, network services, an
 - [Recovering an RSA key from image metadata](writeups/forensics/stego-rsa.md)
 - [Image steganography with LSB analysis](writeups/forensics/image-lsb-steganography.md)
 - [Finding ROT13 text in a packet capture](writeups/forensics/rot13-in-packet-capture.md)
+- [Unpacking nested file formats](writeups/forensics/nested-filetypes.md)
 
 ### Reversing
 - [Using LLDB to inspect a runtime password check](writeups/reversing/lldb-password-check.md)
@@ -51,8 +53,9 @@ The techniques span artifact analysis, reverse engineering, network services, an
 - [ELF obfuscated-hash helper](scripts/recover_obfuscated_hash.py)
 - [Local wordlist digest search](scripts/search_hash_wordlist.py)
 - [Fool Lockout credential tester](scripts/fool_lockout_credential_tester.py)
+- [Read-only printf format-string pointer probe with iterative scanning](scripts/format_string_probe.py)
 
-The network helper requires explicit current-instance arguments and makes no requests until run. Other helpers operate on local inputs. Use the matching tools and libraries for the challenge environment.
+Network helpers require explicit current-instance arguments and make no requests until run. Other helpers operate on local inputs. Use the matching tools and libraries for the challenge environment.
 
 For binary analysis, online decompilation can be a useful way to inspect a program quickly. Preserve the original artifact, record any transformation, and validate important conclusions against runtime behavior or lower-level evidence. Only submit challenge artifacts to external services when their terms and handling are appropriate.
 
